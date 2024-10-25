@@ -9,14 +9,17 @@
     <!-- Hero Section -->
     <div class="relative mx-auto bg-[url('/public/img/bg.png')] bg-cover py-20">
         <!-- Overlay untuk opacity -->
-        <div class="absolute inset-0 bg-gradient-to-r from-red-700 to-red-950 opacity-90"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#610000] to-[#0f3a3f] opacity-80"></div>
+
+
 
         <div class="mx-auto max-w-2xl py-20 relative">
             <div class="text-center">
                 <h1 class="text-balance text-4xl font-bold tracking-tight text-white sm:text-7xl">Student and Faculty
                     Showcase Portal</h1>
-                <p class="mt-8 text-lg font-semibold leading-8 text-white">Website Showcase Karya Mahasiswa dan Dosen Teknik
-                    Informatika Politeknik Negeri Pontianak</p>
+                    <p class="mt-8 text-lg font-semibold leading-6 text-white">Website Showcase Karya Mahasiswa dan Dosen Teknik Informatika <br>
+                        Politeknik Negeri Pontianak</p>
+                    
                 <div class="mt-10 flex items-center justify-center gap-x-6">
                     <a href="#" class="text-sm font-semibold leading-6 text-white">Lebih lanjut <span
                             aria-hidden="true">→</span></a>
@@ -26,7 +29,7 @@
     </div>
     <!-- New Project Section -->
     <div class="mx-auto bg-gray-50 px-20 py-10 sm:px-20">
-        <h2 class="text-4xl font-bold tracking-tight text-gray-900 border-b pb-4 border-gray-700">Projek Terbaru</h2>
+        <h2 class="text-4xl font-bold tracking-tight text-gray-900 border-b pb-4 border-gray-700 text-center">Projek Terbaru</h2>
         <div class="mt-12 grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-4">
             <!-- Card 1 -->
             <div class="relative border-2 border-solid rounded-lg p-4 shadow-sm">
@@ -231,7 +234,7 @@
             </div>
         </div>
     </div>
-    <!-- Brand Section -->
+    {{-- <!-- Brand Section -->
     <div class="mx-auto bg-gradient-to-r from-red-600 to-red-900 py-6">
         <div class="mx-auto max-w-3xl">
             <div class="flex justify-around items-center">
@@ -244,5 +247,5 @@
                         alt="Logo Kampus Merdeka"></a>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

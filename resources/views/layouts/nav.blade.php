@@ -2,46 +2,42 @@
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
-            <!-- Logo -->
-            <div class="shrink-0 flex items-center">
-                <a href="{{ url('/') }}">
-                    <span class="sr-only fill-current text-gray-800 dark:text-gray-100">Karya Kita</span>
-                    <img src="img/logo.png" class="block h-9 w-auto" />
+            <!-- Logo dan Teks -->
+            <div class="shrink-0 flex items-center space-x-3">
+                <a href="{{ url('/') }}" class="flex items-center">
+                    <img src="img/logo.png" class="block h-14 w-auto" alt="Logo" />
+                    <span class="ms-2 text-white dark:text-gray-100 text-lg font-semibold">Politeknik Negeri Pontianak</span>
                 </a>
             </div>
 
-            <!-- Navigation Links -->
-            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                <x-nav-link class="leading-7 text-white" :href="url('/')" :active="request()->routeIs('/')">
-                    {{ __('Beranda') }}
-                </x-nav-link>
-                <x-nav-link class="leading-7 text-white " :href="url('/gallery')" :active="request()->routeIs('/gallery')">
-                    {{ __('Galeri') }}
-                </x-nav-link>
-                <x-nav-link class="leading-7 text-white" :href="url('/about')" :active="request()->routeIs('/about')">
-                    {{ __('Tentang') }}
-                </x-nav-link>
-                <x-nav-link class="leading-7 text-white" :href="url('/contact')" :active="request()->routeIs('/contact')">
-                    {{ __('Kontak') }}
-                </x-nav-link>
-            </div>
-
-            <!-- Settings Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ms-6">
-                @auth
-                    <x-nav-link class="leading-7 text-white" :href="Auth::user()->usertype == 'admin' ? url('admin/dashboard') : route('dashboard')" :active="Auth::user()->usertype == 'admin'
-                        ? request()->routeIs('admin.dashboard')
-                        : request()->routeIs('dashboard')">
+            <!-- Navigation Links (Hidden on Mobile) -->
+            <div class="hidden sm:flex items-center justify-start space-x-8">
+                    <x-nav-link class="leading-7 text-white" :href="url('/')" :active="request()->routeIs('/')">
                         {{ __('Beranda') }}
                     </x-nav-link>
-                @else
-                    <x-nav-link class="leading-7 text-white" :href="url('/login')" :active="request()->routeIs('login')">
-                        {{ __('Login') }}
+                    <x-nav-link class="leading-7 text-white" :href="url('/gallery')" :active="request()->routeIs('/gallery')">
+                        {{ __('Galeri') }}
                     </x-nav-link>
-                @endauth
+                    <x-nav-link class="leading-7 text-white" :href="url('/about')" :active="request()->routeIs('/about')">
+                        {{ __('Tentang') }}
+                    </x-nav-link>
+                    <x-nav-link class="leading-7 text-white" :href="url('/contact')" :active="request()->routeIs('/contact')">
+                        {{ __('Kontak') }}
+                    </x-nav-link>
+
+                <!-- Menu Login -->
+                <x-nav-link class="flex items-center justify-center leading-7 text-white bg-white bg-opacity-20 hover:bg-opacity-50 transition duration-200 ease-in-out rounded-md px-4 py-1" 
+                :href="url('/login')" 
+                :active="request()->routeIs('login')">
+        {{ __('Login') }}
+    </x-nav-link>
+    
+    
+    
+
             </div>
 
-            <!-- Hamburger -->
+            <!-- Hamburger Menu (Visible on Mobile) -->
             <div class="-me-2 flex items-center sm:hidden">
                 <button @click="open = ! open"
                     class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-900 focus:text-gray-500 dark:focus:text-gray-400 transition duration-150 ease-in-out">
@@ -72,23 +68,9 @@
             <x-responsive-nav-link class="leading-7 text-white" :href="url('/contact')" :active="request()->routeIs('/contact')">
                 {{ __('Kontak') }}
             </x-responsive-nav-link>
-        </div>
-
-        <!-- Responsive Settings Options -->
-        <div class="pt-4 pb-1 border-t border-gray-100 dark:border-gray-600">
-            <div class="pb-2 space-y-1">
-                @auth
-                    <x-responsive-nav-link class="leading-7 text-white" :href="Auth::user()->usertype == 'admin' ? url('admin/dashboard') : route('dashboard')" :active="Auth::user()->usertype == 'admin'
-                        ? request()->routeIs('admin.dashboard')
-                        : request()->routeIs('dashboard')">
-                        {{ __('Beranda') }}
-                    </x-responsive-nav-link>
-                @else
-                    <x-responsive-nav-link class="leading-7 text-white" :href="url('/login')" :active="request()->routeIs('login')">
-                        {{ __('Login') }}
-                    </x-responsive-nav-link>
-                @endauth
-            </div>
+            <x-responsive-nav-link class="leading-7 text-white" :href="url('/login')" :active="request()->routeIs('login')">
+                {{ __('Login') }}
+            </x-responsive-nav-link>
         </div>
     </div>
 </nav>
