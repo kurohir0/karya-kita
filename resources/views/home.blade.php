@@ -27,6 +27,7 @@
             </div>
         </div>
     </div>
+    
     <!-- New Project Section -->
     <div class="mx-auto bg-gray-50 px-20 py-10 sm:px-20">
         <h2 class="text-4xl font-bold tracking-tight text-gray-900 border-b pb-4 border-gray-700 text-center">Projek Terbaru</h2>
@@ -234,18 +235,5 @@
             </div>
         </div>
     </div>
-    {{-- <!-- Brand Section -->
-    <div class="mx-auto bg-gradient-to-r from-red-600 to-red-900 py-6">
-        <div class="mx-auto max-w-3xl">
-            <div class="flex justify-around items-center">
-                <a href="https://www.kemdikbud.go.id/"><img src="img/tutwuri.png" class="w-32 hover:"
-                        alt="Logo Tut Wuri Handayani"></a>
-                <a href="https://www.polnep.ac.id/"><img src="img/polnep.png" class="w-32" alt="Logo Polnep"></a>
-                <a href="https://vokasi.kemdikbud.go.id/"><img src="img/vokasi.png" class="h-24"
-                        alt="Logo Vokasi"></a>
-                <a href="https://kampusmerdeka.kemdikbud.go.id/"><img src="img/kampusmerdeka.png" class="w-32"
-                        alt="Logo Kampus Merdeka"></a>
-            </div>
-        </div>
-    </div> --}}
+
 @endsection

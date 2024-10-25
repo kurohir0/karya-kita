@@ -1,4 +1,33 @@
-<nav x-data="{ open: false }" class="bg-gradient-to-r from-red-700 to-red-900 p-2">
+<html>
+<style>
+    .sticky {
+        position: sticky;
+        top: 0;
+        z-index: 50; /* Pastikan z-index cukup tinggi agar navbar tetap di atas konten lain */
+        transition: top 0.3s; /* Smooth effect untuk animasi */
+    }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var lastScrollTop = 0;
+            var navbar = document.querySelector("nav");
+    
+            window.addEventListener("scroll", function () {
+                var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+                // Scroll ke bawah
+                if (currentScroll > lastScrollTop) {
+                    navbar.style.top = "-80px"; // Sembunyikan navbar (ubah nilai sesuai tinggi navbar)
+                } else {
+                    navbar.style.top = "0"; // Tampilkan kembali navbar
+                }
+                lastScrollTop = currentScroll;
+            });
+        });
+    </script>
+    
+</html>
+<nav x-data="{ open: false }" class="sticky bg-gradient-to-r from-red-700 to-red-900 p-2">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
