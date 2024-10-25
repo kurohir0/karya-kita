@@ -60,10 +60,6 @@
                 :active="request()->routeIs('login')">
         {{ __('Login') }}
     </x-nav-link>
-    
-    
-    
-
             </div>
 
             <!-- Hamburger Menu (Visible on Mobile) -->

@@ -16,15 +16,15 @@
                 <!-- Social Media Icons -->
                 <div class="flex mt-4 space-x-4 justify-center">
                     <!-- Instagram -->
-                    <a href="https://www.instagram.com" target="_blank" class="text-white">
+                    <a href="https://www.instagram.com/mediapolnep/" target="_blank" class="text-white">
                         <i class="fab fa-instagram text-lg"></i>
                     </a>
                     <!-- Facebook -->
-                    <a href="https://www.facebook.com" target="_blank" class="text-white">
+                    <a href="https://www.facebook.com/mediapolnep/" target="_blank" class="text-white">
                         <i class="fab fa-facebook text-lg"></i>
                     </a>
                     <!-- YouTube -->
-                    <a href="https://www.youtube.com" target="_blank" class="text-white">
+                    <a href="https://youtube.com/@mediapolnep?si=Y4213sdiKacec3dt" target="_blank" class="text-white">
                         <i class="fab fa-youtube text-lg"></i>
                     </a>
                 </div>

@@ -10,9 +10,6 @@
     <div class="relative mx-auto bg-[url('/public/img/bg.png')] bg-cover py-20">
         <!-- Overlay untuk opacity -->
         <div class="absolute inset-0 bg-gradient-to-r from-[#610000] to-[#0f3a3f] opacity-80"></div>
-
-
-
         <div class="mx-auto max-w-2xl py-20 relative">
             <div class="text-center">
                 <h1 class="text-balance text-4xl font-bold tracking-tight text-white sm:text-7xl">Student and Faculty
