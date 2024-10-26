@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('title')
-    <title>Home Page</title>
+    <title>Home Page | Karya Kita</title>
 @endsection
 
 

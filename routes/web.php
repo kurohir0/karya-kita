@@ -9,23 +9,25 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/gallery', function () {
     return view('gallery');
-});
+})->name('gallery');
 
 Route::get('/about', function () {
     return view('about');
-});
+})->name('about');
 
 Route::get('/contact', function () {
     return view('contact');
-});
+})->name('contact');
+
 
 Route::get('/sidebar', function () {
     return view('sidebar');
 });
+
 
 
 // Route::get('/dashboard', function () {

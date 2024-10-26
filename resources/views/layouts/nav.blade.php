@@ -41,18 +41,21 @@
 
             <!-- Navigation Links (Hidden on Mobile) -->
             <div class="hidden sm:flex items-center justify-start space-x-8">
-                    <x-nav-link class="leading-7 text-white" :href="url('/')" :active="request()->routeIs('/')">
-                        {{ __('Beranda') }}
-                    </x-nav-link>
-                    <x-nav-link class="leading-7 text-white" :href="url('/gallery')" :active="request()->routeIs('/gallery')">
-                        {{ __('Galeri') }}
-                    </x-nav-link>
-                    <x-nav-link class="leading-7 text-white" :href="url('/about')" :active="request()->routeIs('/about')">
-                        {{ __('Tentang') }}
-                    </x-nav-link>
-                    <x-nav-link class="leading-7 text-white" :href="url('/contact')" :active="request()->routeIs('/contact')">
-                        {{ __('Kontak') }}
-                    </x-nav-link>
+                <x-nav-link :href="url('/')" :active="request()->routeIs('home')">
+                    {{ __('Beranda') }}
+                </x-nav-link>
+                <x-nav-link :href="url('/gallery')" :active="request()->routeIs('gallery')">
+                    {{ __('Galeri') }}
+                </x-nav-link>
+                <x-nav-link :href="url('/about')" :active="request()->routeIs('about')">
+                    {{ __('Tentang') }}
+                </x-nav-link>
+                <x-nav-link :href="url('/contact')" :active="request()->routeIs('contact')">
+                    {{ __('Kontak') }}
+                </x-nav-link>
+            </div>
+            
+            
 
                 <!-- Menu Login -->
                 <x-nav-link class="flex items-center justify-center leading-7 text-white bg-white bg-opacity-20 hover:bg-opacity-50 transition duration-200 ease-in-out rounded-md px-4 py-1" 
