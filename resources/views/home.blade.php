@@ -7,23 +7,89 @@
 
 @section('content')
     <!-- Hero Section -->
-    <div class="relative mx-auto bg-[url('/public/img/bg.png')] bg-cover py-20">
+   
+    <div class="relative mx-auto bg-[url('/public/img/bg.png')] bg-cover bg-center min-h-screen h-screen rounded-b-[40px] overflow-hidden">
         <!-- Overlay untuk opacity -->
-        <div class="absolute inset-0 bg-gradient-to-r from-[#610000] to-[#0f3a3f] opacity-80"></div>
-        <div class="mx-auto max-w-2xl py-20 relative">
-            <div class="text-center">
-                <h1 class="text-balance text-4xl font-bold tracking-tight text-white sm:text-7xl">Student and Faculty
-                    Showcase Portal</h1>
-                    <p class="mt-8 text-lg font-semibold leading-6 text-white">Website Showcase Karya Mahasiswa dan Dosen Teknik Informatika <br>
-                        Politeknik Negeri Pontianak</p>
-                    
-                <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#" class="text-sm font-semibold leading-6 text-white">Lebih lanjut <span
-                            aria-hidden="true">→</span></a>
-                </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#670000] to-[#924700] to-[#c87c00] opacity-80"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center">
+
+            <div class="mx-auto max-w-2xl text-center">
+                <h1 class="text-balance text-4xl font-bold tracking-tight text-white sm:text-7xl animate-title">Student and Faculty Showcase Portal</h1>
+                <p class="mt-8 text-lg font-semibold leading-6 text-white">
+                    <span class="animate-left">Website</span>
+                    <span class="animate-left">Showcase</span>
+                    <span class="animate-left">Karya</span>
+                    <span class="animate-left">Mahasiswa</span>
+                    <span class="animate-left">dan</span>
+                    <span class="animate-left">Dosen</span>
+                    <span class="animate-left">Teknik</span>
+                    <span class="animate-left">Informatika</span><br>
+                    <span class="animate-left">Politeknik</span>
+                    <span class="animate-left">Negeri</span>
+                    <span class="animate-left">Pontianak</span>
+                </p>
             </div>
         </div>
     </div>
+    
+    <style>
+        /* Keyframes for left-to-right animation */
+        @keyframes slide-in-left {
+            from {
+                opacity: 0;
+                transform: translateX(-30px); /* Move from the left */
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0); /* Return to original position */
+            }
+        }
+    
+        /* Keyframes for title animation */
+        @keyframes slide-in-title {
+            from {
+                opacity: 0;
+                transform: translateX(-50px); /* Move from the left */
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0); /* Return to original position */
+            }
+        }
+    
+        /* Applying the animation with delay for each word */
+        .animate-left {
+            display: inline-block; /* Ensure the spans are inline-block for animation */
+            opacity: 0; /* Start invisible */
+            animation: slide-in-left 0.7s ease forwards; /* Set the animation */
+        }
+    
+        /* Delay each span's animation */
+        .animate-left:nth-child(1) { animation-delay: 0s; }
+        .animate-left:nth-child(2) { animation-delay: 0.1s; }
+        .animate-left:nth-child(3) { animation-delay: 0.2s; }
+        .animate-left:nth-child(4) { animation-delay: 0.3s; }
+        .animate-left:nth-child(5) { animation-delay: 0.4s; }
+        .animate-left:nth-child(6) { animation-delay: 0.5s; }
+        .animate-left:nth-child(7) { animation-delay: 0.6s; }
+        .animate-left:nth-child(8) { animation-delay: 0.7s; }
+        .animate-left:nth-child(9) { animation-delay: 0.8s; }
+        .animate-left:nth-child(10) { animation-delay: 0.9s; }
+        .animate-left:nth-child(11) { animation-delay: 1s; }
+        .animate-left:nth-child(12) { animation-delay: 1.1s; }
+    
+        /* Animation for title */
+        .animate-title {
+            display: inline-block; /* Ensure title is inline-block for animation */
+            opacity: 0; /* Start invisible */
+            animation: slide-in-title 1s ease forwards; /* Set the animation for title */
+            animation-delay: 0.5s; /* Delay before title appears */
+        }
+    </style>
+    
+    
+    
+    
     
     <!-- New Project Section -->
     <div class="mx-auto bg-gray-50 px-20 py-10 sm:px-20">

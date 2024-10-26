@@ -46,7 +46,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(to bottom, #cd6c6c, #b5cdc7);
+            background: linear-gradient(to bottom, #670000, #7e4a19);
             opacity: 0.8; /* Gelap dengan transparansi */
             z-index: 1; /* Di atas blur */
         }
