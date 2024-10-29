@@ -1,3 +1,4 @@
+
 <html>
 <style>
     .sticky {
@@ -6,26 +7,26 @@
         z-index: 50; /* Pastikan z-index cukup tinggi agar navbar tetap di atas konten lain */
         transition: top 0.3s; /* Smooth effect untuk animasi */
     }
-    </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var lastScrollTop = 0;
-            var navbar = document.querySelector("nav");
-    
-            window.addEventListener("scroll", function () {
-                var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    
-                // Scroll ke bawah
-                if (currentScroll > lastScrollTop) {
-                    navbar.style.top = "-80px"; // Sembunyikan navbar (ubah nilai sesuai tinggi navbar)
-                } else {
-                    navbar.style.top = "0"; // Tampilkan kembali navbar
-                }
-                lastScrollTop = currentScroll;
-            });
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var lastScrollTop = 0;
+        var navbar = document.querySelector("nav");
+
+        window.addEventListener("scroll", function () {
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Scroll ke bawah
+            if (currentScroll > lastScrollTop) {
+                navbar.style.top = "-80px"; // Sembunyikan navbar (ubah nilai sesuai tinggi navbar)
+            } else {
+                navbar.style.top = "0"; // Tampilkan kembali navbar
+            }
+            lastScrollTop = currentScroll;
         });
-    </script>
-    
+    });
+</script>
+
 </html>
 <nav x-data="{ open: false }" class="sticky bg-gradient-to-r from-red-700 to-red-900 p-2">
     <!-- Primary Navigation Menu -->
@@ -35,7 +36,7 @@
             <div class="shrink-0 flex items-center space-x-3">
                 <a href="{{ url('/') }}" class="flex items-center">
                     <img src="img/logo.png" class="block h-14 w-auto" alt="Logo" />
-                    <span class="ms-2 text-white dark:text-gray-100 text-lg font-semibold">Politeknik Negeri Pontianak</span>
+                    <span class="ms-2 text-white dark:text-gray-100 text-lg font-semibold hover:text-[#ff0000]">Politeknik Negeri Pontianak</span>
                 </a>
             </div>
 
@@ -53,20 +54,17 @@
                 <x-nav-link :href="url('/contact')" :active="request()->routeIs('contact')">
                     {{ __('Kontak') }}
                 </x-nav-link>
-            </div>
-            
-            
 
                 <!-- Menu Login -->
                 <x-nav-link class="flex items-center justify-center leading-7 text-white bg-white bg-opacity-20 hover:bg-opacity-50 transition duration-200 ease-in-out rounded-md px-4 py-1" 
                 :href="url('/login')" 
                 :active="request()->routeIs('login')">
-        {{ __('Login') }}
-    </x-nav-link>
+                    {{ __('Login') }}
+                </x-nav-link>
             </div>
 
             <!-- Hamburger Menu (Visible on Mobile) -->
-            <div class="-me-2 flex items-center sm:hidden">
+            <div class="flex items-center sm:hidden ml-auto"> <!-- ml-auto untuk memindahkan tombol ke kanan -->
                 <button @click="open = ! open"
                     class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 dark:text-gray-500 hover:text-gray-500 dark:hover:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-900 focus:text-gray-500 dark:focus:text-gray-400 transition duration-150 ease-in-out">
                     <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">

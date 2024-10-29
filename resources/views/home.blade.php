@@ -8,9 +8,12 @@
 @section('content')
     <!-- Hero Section -->
    
-    <div class="relative mx-auto bg-[url('/public/img/bg.png')] bg-cover bg-center min-h-screen h-screen rounded-b-[40px] overflow-hidden">
+    {{-- <div class="relative mx-auto bg-[url('/public/img/bg.png')] bg-cover bg-center min-h-screen h-screen rounded-b-[40px] overflow-hidden"> --}}
+        <div class="banner">
+            <div class="banner-image">
         <!-- Overlay untuk opacity -->
-        <div class="absolute inset-0 bg-gradient-to-r from-[#670000] to-[#924700] to-[#c87c00] opacity-80"></div>
+        <div class="overlay"></div>
+        <div class="banner-grad"></div>
         <div class="absolute inset-0 flex flex-col justify-center items-center">
 
             <div class="mx-auto max-w-2xl text-center">
@@ -30,6 +33,7 @@
                 </p>
             </div>
         </div>
+    </div>
     </div>
     
     <style>
@@ -85,6 +89,49 @@
             animation: slide-in-title 1s ease forwards; /* Set the animation for title */
             animation-delay: 0.5s; /* Delay before title appears */
         }
+
+        .banner {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.banner-image {
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Ensure it's above the image */
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+
+}
+
+.overlay {
+    position: absolute; /* Overlay memerlukan posisi absolut */
+    top: 0; /* Mengatur dari atas */
+    left: 0; /* Mengatur dari kiri */
+    right: 0; /* Mengatur dari kanan */
+    bottom: 0; /* Mengatur dari bawah */
+    background: linear-gradient(to right, #670000, #924700, #c87c00); /* Gradient dari kiri ke kanan */
+    opacity: 0.8; /* Mengatur transparansi */
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
     </style>
     
     

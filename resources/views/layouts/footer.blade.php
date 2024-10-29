@@ -9,12 +9,12 @@
             <div class="mb-6 md:mb-0 flex flex-col items-center md:mr-10 animate-logo">
                 <a href="/" class="flex flex-col items-center">
                     <img src="img/logo.png" class="h-24 mr-4" alt="FlowBite Logo" />
-                    <span class="self-center text-2xl text-white font-semibold whitespace-nowrap text-center">
+                    <span class="self-center text-2xl text-white font-semibold whitespace-nowrap text-center hover:text-[#ff0000] dark:hover:text-gray-300 focus:outline-none focus:text-red-400 dark:focus:text-red-300 transition duration-150 ease-in-out transform hover:scale-105">
                         Student and Faculty <br> Showcase Portal
                     </span>
                 </a>
                 <!-- Social Media Icons -->
-                <div class="flex mt-4 space-x-4 justify-center">
+                <div class="flex mt-4 space-x-4 justify-center hover:text-[#ff0000] dark:hover:text-gray-300 focus:outline-none focus:text-red-400 dark:focus:text-red-300 transition duration-150 ease-in-out transform hover:scale-105">
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/mediapolnep/" target="_blank" class="text-white">
                         <i class="fab fa-instagram text-lg"></i>
@@ -31,11 +31,11 @@
             </div>
 
             <!-- Content Section -->
-            <div class="grid grid-cols-1 gap-8 sm:gap-10 mt-10 md:grid-cols-2 w-full">
+            <div class="grid grid-cols-1 gap-8 sm:gap-10 mt-10 md:grid-cols-2 w-full ">
                 <!-- Section Tentang Kami -->
-                <div class="flex flex-col items-center text-center md:ml-10 md:mt-1">
-                    <h2 class="mb-4 text-lg font-semibold text-white uppercase animate-text">Tentang Kami</h2>
-                    <p class="text-white font-medium text-sm animate-text">
+                <div class="flex flex-col items-center text-center md:ml-10 md:mt-1 ">
+                    <h2 class="mb-4 text-lg font-semibold text-white uppercase animate-text hover:text-[#ff0000] dark:hover:text-gray-300 focus:outline-none focus:text-red-400 dark:focus:text-red-300 transition duration-150 ease-in-out transform hover:scale-105">Tentang Kami</h2>
+                    <p class="text-white font-medium text-sm animate-text hover:text-[#ff0000] dark:hover:text-gray-300 focus:outline-none focus:text-red-400 dark:focus:text-red-300 transition duration-150 ease-in-out transform hover:scale-105">
                         Karya kita adalah portal showcase untuk mahasiswa dan dosen Teknik Informatika, 
                         yang bertujuan untuk memamerkan karya-karya inovatif dan kreatif
                     </p>
@@ -43,8 +43,8 @@
         
                 <!-- Section Alamat Kami -->
                 <div class="flex flex-col items-center text-center md:mt-1">
-                    <h2 class="mb-4 text-lg font-semibold text-white uppercase animate-text">Alamat Kami</h2>
-                    <p class="text-white font-medium text-sm animate-text">
+                    <h2 class="mb-4 text-lg font-semibold text-white uppercase animate-text hover:text-[#ff0000] dark:hover:text-gray-300 focus:outline-none focus:text-red-400 dark:focus:text-red-300 transition duration-150 ease-in-out transform hover:scale-105">Alamat Kami</h2>
+                    <p class="text-white font-medium text-sm animate-text hover:text-[#ff0000] dark:hover:text-gray-300 focus:outline-none focus:text-red-400 dark:focus:text-red-300 transition duration-150 ease-in-out transform hover:scale-105">
                         Politeknik Negeri Pontianak,<br>
                         Jl. Jenderal Ahmad Yani, Kec. Pontianak Tenggara<br>
                         Kota Pontianak, Kalimantan Barat 78124

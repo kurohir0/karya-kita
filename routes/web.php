@@ -54,3 +54,6 @@ route::middleware(['auth', 'adminMiddleware'])->group(function () {
 route::middleware(['auth', 'dosenMiddleware'])->group(function () {
     route::get('/dosen/dashboard', [DosenController::class, 'index'])->name('dosen.dashboard');
 });
+
+Route::post('/kontak/kirim', [KontakController::class, 'kirim'])->name('kontak.kirim');
+
