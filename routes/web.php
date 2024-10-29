@@ -47,7 +47,7 @@ route::middleware(['auth', 'adminMiddleware'])->group(function () {
     route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
     route::get('/admin/pengajuan', [PengajuanController::class, 'index'])->name('admin.pengajuan');
     route::get('/admin/karya', [AdminKaryaController::class, 'index'])->name('admin.karya');
-    route::get('/admin/akun', [AkunController::class, 'index'])->name('admin.akun');
+    Route::resource('/admin/akun', AkunController::class, ['as' => 'admin']);
 });
 
 route::middleware(['auth', 'dosenMiddleware'])->group(function () {
