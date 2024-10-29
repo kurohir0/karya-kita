@@ -82,16 +82,16 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link class="leading-7 text-white" :href="url('/')" :active="request()->routeIs('/')">
+            <x-responsive-nav-link class="leading-7 text-white" :href="url('/')" :active="request()->routeIs('home')">
                 {{ __('Beranda') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link class="leading-7 text-white" :href="url('/gallery')" :active="request()->routeIs('/gallery')">
+            <x-responsive-nav-link class="leading-7 text-white" :href="url('/gallery')" :active="request()->routeIs('gallery')">
                 {{ __('Galeri') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link class="leading-7 text-white" :href="url('/about')" :active="request()->routeIs('/about')">
+            <x-responsive-nav-link class="leading-7 text-white" :href="url('/about')" :active="request()->routeIs('about')">
                 {{ __('Tentang') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link class="leading-7 text-white" :href="url('/contact')" :active="request()->routeIs('/contact')">
+            <x-responsive-nav-link class="leading-7 text-white" :href="url('/contact')" :active="request()->routeIs('contact')">
                 {{ __('Kontak') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link class="leading-7 text-white" :href="url('/login')" :active="request()->routeIs('login')">

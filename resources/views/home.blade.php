@@ -140,7 +140,7 @@
     
     <!-- New Project Section -->
     <div class="mx-auto bg-gray-50 px-20 py-10 sm:px-20">
-        <h2 class="text-4xl font-bold tracking-tight text-gray-900 border-b pb-4 border-gray-700 text-center">Projek Terbaru</h2>
+        <h2 class="text-4xl font-bold tracking-tight text-gray-900 border-b pb-4 border-gray-700 text-center hover:text-[#ff0000]">Projek Terbaru</h2>
         <div class="mt-12 grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-4">
             <!-- Card 1 -->
             <div class="relative border-2 border-solid rounded-lg p-4 shadow-sm">

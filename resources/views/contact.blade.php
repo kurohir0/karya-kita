@@ -100,7 +100,7 @@
 
 
 <div class="mx-auto px-20 py-10 sm:px-20">
-<h2 class="text-4xl font-bold tracking-tight text-center text-gray-900 border-b pb-4 border-gray-700">Hubungi Kami</h2>
+<h2 class="text-4xl font-bold tracking-tight text-center text-gray-900 border-b pb-4 border-gray-700 hover:text-[#ff0000]">Hubungi Kami</h2>
 </div>
 <!-- Form Kontak -->
 <div class="contact-form-container mt-10">
