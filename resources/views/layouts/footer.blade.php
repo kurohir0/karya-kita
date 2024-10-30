@@ -10,7 +10,7 @@
                 <a href="/" class="flex flex-col items-center">
                     <img src="img/logo.png" class="h-24 mr-4" alt="FlowBite Logo" />
                     <span class="self-center text-2xl text-white font-semibold whitespace-nowrap text-center hover:text-[#ff0000] dark:hover:text-gray-300 focus:outline-none focus:text-red-400 dark:focus:text-red-300 transition duration-150 ease-in-out transform hover:scale-105">
-                        Student and Faculty <br> Showcase Portal
+                        Portal Galeri Karya  <br> Mahasiswa dan Dosen
                     </span>
                 </a>
                 <!-- Social Media Icons -->

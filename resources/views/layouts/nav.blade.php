@@ -59,7 +59,7 @@
                 <x-nav-link class="flex items-center justify-center leading-7 text-white bg-white bg-opacity-20 hover:bg-opacity-50 transition duration-200 ease-in-out rounded-md px-4 py-1" 
                 :href="url('/login')" 
                 :active="request()->routeIs('login')">
-                    {{ __('Login') }}
+                    {{ __('Masuk') }}
                 </x-nav-link>
             </div>
 

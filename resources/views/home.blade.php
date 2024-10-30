@@ -17,7 +17,7 @@
         <div class="absolute inset-0 flex flex-col justify-center items-center">
 
             <div class="mx-auto max-w-2xl text-center">
-                <h1 class="text-balance text-4xl font-bold tracking-tight text-white sm:text-7xl animate-title">Student and Faculty Showcase Portal</h1>
+                <h1 class="text-balance text-4xl font-bold tracking-tight text-white sm:text-7xl animate-title">Portal Galeri Karya Mahasiswa dan Dosen</h1>
                 <p class="mt-8 text-lg font-semibold leading-6 text-white">
                     <span class="animate-left">Website</span>
                     <span class="animate-left">Showcase</span>
