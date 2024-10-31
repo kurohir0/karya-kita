@@ -5,17 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Karya extends Model
+class Pengajuan extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'user_id',
-        'judul',
-        'deskripsi',
-        'kategori',
+        'karya_id',
         'status',
-        'likes',
     ];
 
     public function user()
@@ -23,13 +20,8 @@ class Karya extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function pengajuan()
+    public function karya()
     {
-        return $this->hasMany(Pengajuan::class);
-    }
-
-    public function images()
-    {
-        return $this->hasMany(KaryaImage::class);
+        return $this->belongsTo(Karya::class);
     }
 }

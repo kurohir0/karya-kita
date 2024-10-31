@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('karyas', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->string('judul');
-            $table->string('kategori');
-            $table->date('tanggal');
+            $table->text('deskripsi')->nullable();
+            $table->string('kategori')->nullable();
+            $table->string('gambar')->nullable();
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }

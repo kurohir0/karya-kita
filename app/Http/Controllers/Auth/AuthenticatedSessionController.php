@@ -35,7 +35,7 @@ class AuthenticatedSessionController extends Controller
         } elseif (Auth::user()->usertype == 'mahasiswa') {
             // return redirect(route('mahasiswa.dashboard'));
             // return redirect()->intended(route('mahasiswa.dashboard', absolute: false));
-            return redirect()->intended(route('dashboard', absolute: false));
+            return redirect()->intended(route('mahasiswa.dashboard', absolute: false));
         }
     }
 

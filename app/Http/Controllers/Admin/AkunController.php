@@ -35,7 +35,7 @@ class AkunController extends Controller
         User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => bcrypt($request->password),
+            'password' => Hash::make($request->password),
             'usertype' => $request->usertype,
         ]);
 
@@ -61,18 +61,17 @@ class AkunController extends Controller
             'usertype' => 'nullable|in:dosen,mahasiswa',
         ]);
 
-        // Update fields only if they are provided
         if ($request->filled('name')) {
             $user->name = $request->name;
         }
 
         if ($request->filled('email')) {
             $user->email = $request->email;
-            $user->email_verified_at = null; // Set to null if the email is updated
+            $user->email_verified_at = null; // Reset verification if email is updated
         }
 
         if ($request->filled('password')) {
-            $user->password = bcrypt($request->password);
+            $user->password = Hash::make($request->password);
         }
 
         if ($request->filled('usertype')) {
